@@ -1,0 +1,6 @@
+@RokuWebRemote_HostAddress = http://localhost:5104
+
+GET {{RokuWebRemote_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

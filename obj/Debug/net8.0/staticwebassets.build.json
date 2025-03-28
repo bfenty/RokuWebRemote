@@ -1,0 +1,39 @@
+{
+  "Version": 1,
+  "Hash": "97TtAI264FtOI8W84iDRemclc4znwjnrVKBwthTH+Qs=",
+  "Source": "RokuWebRemote",
+  "BasePath": "_content/RokuWebRemote",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "RokuWebRemote\\wwwroot",
+      "Source": "RokuWebRemote",
+      "ContentRoot": "C:\\Users\\bfenty\\Github\\RokuWebRemote\\wwwroot\\",
+      "BasePath": "_content/RokuWebRemote",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\bfenty\\Github\\RokuWebRemote\\wwwroot\\index.html",
+      "SourceId": "RokuWebRemote",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\bfenty\\Github\\RokuWebRemote\\wwwroot\\",
+      "BasePath": "_content/RokuWebRemote",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    }
+  ]
+}
