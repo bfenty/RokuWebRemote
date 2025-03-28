@@ -1,0 +1,31 @@
+# Ignore build output
+bin/
+obj/
+
+# Ignore NuGet packages
+packages/
+
+# Ignore Visual Studio temporary files and generated files
+*.suo
+*.user
+*.sln.docstates
+
+# Ignore intermediate build results
+*.iobj
+*.ipdb
+
+# Ignore MSBuild files
+*.csproj.user
+*.vbproj.user
+*.vcxproj.user
+*.sln.docstates
+
+# Ignore Roslyn cache
+*.cache
+
+# Ignore temporary files
+*.tmp
+*.log
+
+# Ignore DLL files
+*.dll

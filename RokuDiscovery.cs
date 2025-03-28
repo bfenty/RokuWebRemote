@@ -30,7 +30,7 @@ public static async Task<List<RokuDevice>> DiscoveryAsync()
 
     using var udpClient = new UdpClient();
 
-    Debug.WriteLine("Starting SSDP discovery");
+    Console.WriteLine("Starting SSDP discovery");
 
     //SSDP discovery message
     string request = 
@@ -45,7 +45,7 @@ public static async Task<List<RokuDevice>> DiscoveryAsync()
 
     await udpClient.SendAsync(requestBytes,requestBytes.Length, multicastEndPoint);
 
-    Debug.WriteLine("SSDP discovery message sent");
+    Console.WriteLine("SSDP discovery message sent");
 
     //set timeout
     udpClient.Client.ReceiveTimeout = 3000;
@@ -60,7 +60,7 @@ public static async Task<List<RokuDevice>> DiscoveryAsync()
             string location = ParseLocationFromResponse(response);
             if (!string.IsNullOrEmpty(location))
             {
-                Debug.WriteLine($"Found device at {location}");
+                Console.WriteLine($"Found device at {location}");
                 string name = await GetDeviceNameAsync(location);
                 devices.Add(new RokuDevice(name, location));
             }
@@ -68,7 +68,7 @@ public static async Task<List<RokuDevice>> DiscoveryAsync()
     }
     catch (SocketException)
     {
-        Debug.WriteLine("Timeout reached, stopping SSDP discovery");
+        Console.WriteLine("Timeout reached, stopping SSDP discovery");
         // Timeout reached, stop listening for responses
     }
 
