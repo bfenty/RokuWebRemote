@@ -30,6 +30,9 @@ public static async Task<List<RokuDevice>> DiscoveryAsync()
 
     using var udpClient = new UdpClient();
 
+    Console.WriteLine("Adding known devices");
+    devices.Add(new RokuDevice("Office", "http://192.168.0.207:8060/"));
+
     Console.WriteLine("Starting SSDP discovery");
 
     //SSDP discovery message
@@ -43,34 +46,36 @@ public static async Task<List<RokuDevice>> DiscoveryAsync()
     byte[] requestBytes = Encoding.ASCII.GetBytes(request);
     var multicastEndPoint = new IPEndPoint(IPAddress.Parse("239.255.255.250"),1900);
 
-    await udpClient.SendAsync(requestBytes,requestBytes.Length, multicastEndPoint);
+    // await udpClient.SendAsync(requestBytes,requestBytes.Length, multicastEndPoint);
 
-    Console.WriteLine("SSDP discovery message sent");
+    // Console.WriteLine("SSDP discovery message sent");
 
-    //set timeout
-    udpClient.Client.ReceiveTimeout = 3000;
+    // //set timeout
+    // udpClient.Client.ReceiveTimeout = 10000;
 
-    try
-    {
-        while(true)
-        {
-            var result = await udpClient.ReceiveAsync();
-            string response = Encoding.ASCII.GetString(result.Buffer);
+    // try
+    // {
+    //     while(true)
+    //     {
+    //         Console.WriteLine("Waiting for response...");
+    //         var result = await udpClient.ReceiveAsync();
+    //         string response = Encoding.ASCII.GetString(result.Buffer);
+    //         Console.WriteLine($"Received response from {result.RemoteEndPoint.Address}");
             
-            string location = ParseLocationFromResponse(response);
-            if (!string.IsNullOrEmpty(location))
-            {
-                Console.WriteLine($"Found device at {location}");
-                string name = await GetDeviceNameAsync(location);
-                devices.Add(new RokuDevice(name, location));
-            }
-        }
-    }
-    catch (SocketException)
-    {
-        Console.WriteLine("Timeout reached, stopping SSDP discovery");
-        // Timeout reached, stop listening for responses
-    }
+    //         string location = ParseLocationFromResponse(response);
+    //         if (!string.IsNullOrEmpty(location))
+    //         {
+    //             Console.WriteLine($"Found device at {location}");
+    //             string name = await GetDeviceNameAsync(location);
+    //             devices.Add(new RokuDevice(name, location));
+    //         }
+    //     }
+    // }
+    // catch (SocketException)
+    // {
+    //     Console.WriteLine("Timeout reached, stopping SSDP discovery");
+    //     // Timeout reached, stop listening for responses
+    // }
 
     return devices;
 }

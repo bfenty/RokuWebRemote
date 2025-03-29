@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RokuWebRemote")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b35abe9d708e8477add93786d9e00a97f2ae67b1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3b3f762ed9642d490b37197f1b09d541815f97ba")]
 [assembly: System.Reflection.AssemblyProductAttribute("RokuWebRemote")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RokuWebRemote")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
