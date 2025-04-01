@@ -36,15 +36,15 @@ public static async Task<List<RokuDevice>> DiscoveryAsync()
     Console.WriteLine("Starting SSDP discovery");
 
     //SSDP discovery message
-    string request = 
-        "M-SEARCH * HTTP/1.1\r\n" +
-        "Host: 239.255.255.250:1900\r\n" +
-        "Man: \"ssdp:discover\"\r\n" +
-        "ST: roku:ecp\r\n" +
-        "MX: 3\r\n\r\n";
+    // string request = 
+    //     "M-SEARCH * HTTP/1.1\r\n" +
+    //     "Host: 239.255.255.250:1900\r\n" +
+    //     "Man: \"ssdp:discover\"\r\n" +
+    //     "ST: roku:ecp\r\n" +
+    //     "MX: 3\r\n\r\n";
 
-    byte[] requestBytes = Encoding.ASCII.GetBytes(request);
-    var multicastEndPoint = new IPEndPoint(IPAddress.Parse("239.255.255.250"),1900);
+    // byte[] requestBytes = Encoding.ASCII.GetBytes(request);
+    // var multicastEndPoint = new IPEndPoint(IPAddress.Parse("239.255.255.250"),1900);
 
     // await udpClient.SendAsync(requestBytes,requestBytes.Length, multicastEndPoint);
 

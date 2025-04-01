@@ -1,25 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bfenty\\Github\\RokuWebRemote\\RokuWebRemote.csproj": {}
+    "/home/bfenty/github/RokuWebRemote/RokuWebRemote.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bfenty\\Github\\RokuWebRemote\\RokuWebRemote.csproj": {
+    "/home/bfenty/github/RokuWebRemote/RokuWebRemote.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bfenty\\Github\\RokuWebRemote\\RokuWebRemote.csproj",
+        "projectUniqueName": "/home/bfenty/github/RokuWebRemote/RokuWebRemote.csproj",
         "projectName": "RokuWebRemote",
-        "projectPath": "C:\\Users\\bfenty\\Github\\RokuWebRemote\\RokuWebRemote.csproj",
-        "packagesPath": "C:\\Users\\bfenty\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bfenty\\Github\\RokuWebRemote\\obj\\",
+        "projectPath": "/home/bfenty/github/RokuWebRemote/RokuWebRemote.csproj",
+        "packagesPath": "/home/bfenty/.nuget/packages/",
+        "outputPath": "/home/bfenty/github/RokuWebRemote/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\bfenty\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/bfenty/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "/usr/lib/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -37,7 +38,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -63,6 +65,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Host.linux-x64",
+              "version": "[8.0.14, 8.0.14]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -71,7 +79,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.407/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/9.0.104/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

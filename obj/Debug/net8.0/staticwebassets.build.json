@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "97TtAI264FtOI8W84iDRemclc4znwjnrVKBwthTH+Qs=",
+  "Hash": "EKM5eSXq1blgikKS/h1xwoGQkvIWbjaP7hguTG5WaL8=",
   "Source": "RokuWebRemote",
   "BasePath": "_content/RokuWebRemote",
   "Mode": "Default",
@@ -8,32 +8,118 @@
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [
     {
-      "Name": "RokuWebRemote\\wwwroot",
+      "Name": "RokuWebRemote/wwwroot",
       "Source": "RokuWebRemote",
-      "ContentRoot": "C:\\Users\\bfenty\\Github\\RokuWebRemote\\wwwroot\\",
+      "ContentRoot": "/home/bfenty/github/RokuWebRemote/wwwroot/",
       "BasePath": "_content/RokuWebRemote",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\bfenty\\Github\\RokuWebRemote\\wwwroot\\index.html",
+      "Identity": "/home/bfenty/github/RokuWebRemote/wwwroot/index.html",
       "SourceId": "RokuWebRemote",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\bfenty\\Github\\RokuWebRemote\\wwwroot\\",
+      "ContentRoot": "/home/bfenty/github/RokuWebRemote/wwwroot/",
       "BasePath": "_content/RokuWebRemote",
-      "RelativePath": "index.html",
+      "RelativePath": "index#[.{fingerprint}]?.html",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "5z8o55c3ca",
+      "Integrity": "j+NVcEuMjKPGeici69Q+Hew6QWrNHbIPjEk70zjazaQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\index.html"
+      "OriginalItemSpec": "wwwroot/index.html"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "index.5z8o55c3ca.html",
+      "AssetFile": "/home/bfenty/github/RokuWebRemote/wwwroot/index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1346"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"j+NVcEuMjKPGeici69Q+Hew6QWrNHbIPjEk70zjazaQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 21:28:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5z8o55c3ca"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-j+NVcEuMjKPGeici69Q+Hew6QWrNHbIPjEk70zjazaQ="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "/home/bfenty/github/RokuWebRemote/wwwroot/index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1346"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"j+NVcEuMjKPGeici69Q+Hew6QWrNHbIPjEk70zjazaQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 21:28:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-j+NVcEuMjKPGeici69Q+Hew6QWrNHbIPjEk70zjazaQ="
+        }
+      ]
     }
   ]
 }

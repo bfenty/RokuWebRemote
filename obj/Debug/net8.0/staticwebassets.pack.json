@@ -1,23 +1,27 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\bfenty\\Github\\RokuWebRemote\\wwwroot\\index.html",
-      "PackagePath": "staticwebassets\\index.html"
+      "Id": "/home/bfenty/github/RokuWebRemote/wwwroot/index.html",
+      "PackagePath": "staticwebassets/index.html"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.RokuWebRemote.Microsoft.AspNetCore.StaticWebAssets.props",
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.RokuWebRemote.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.RokuWebRemote.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.RokuWebRemote.props",
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.RokuWebRemote.props",
       "PackagePath": "build\\RokuWebRemote.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.RokuWebRemote.props",
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.RokuWebRemote.props",
       "PackagePath": "buildMultiTargeting\\RokuWebRemote.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.RokuWebRemote.props",
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.RokuWebRemote.props",
       "PackagePath": "buildTransitive\\RokuWebRemote.props"
     }
   ],
